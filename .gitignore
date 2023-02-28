@@ -1,0 +1,8 @@
+logs/
+local/
+crash-reports/
+rhino.local.properties
+saves/
+shaderpacks/
+journeymap/
+kubejs/exported/
