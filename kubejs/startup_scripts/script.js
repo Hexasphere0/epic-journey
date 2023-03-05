@@ -4,6 +4,7 @@ console.info('Hello, World! (You will only see this line once in console, during
 
 StartupEvents.registry('item', event => {
 	event.create("rainbow_petal").displayName("Rainbow Petal");
+	event.create("bronze_blade").displayName("Bronze Blade");
 })
 
 StartupEvents.registry('block', event => {

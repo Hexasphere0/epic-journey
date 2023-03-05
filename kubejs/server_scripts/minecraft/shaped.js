@@ -1,5 +1,63 @@
 ServerEvents.recipes(event => {
     event.shaped(
+        "minecraft:campfire",
+        [
+            " L ",
+            "SFS",
+            "BBB"
+        ],
+        {
+            "S": "minecraft:stick",
+            "L": "minecraft:leaves",
+            "F": "minecraft:flint",
+            "B": "#minecraft:logs"
+        }
+    )
+
+    event.shaped(
+        "minecraft:furnace",
+        [
+            "BBB",
+            "BFB",
+            "SSS"
+        ],
+        {
+            "B": "minecraft:bricks",
+            "F": "minecraft:flint",
+            "S": "minecraft:cobblestone"
+        }
+    )
+
+    event.shaped(
+        "minecraft:blast_furnace",
+        [
+            "SSS",
+            "SFS",
+            "BBB"
+        ],
+        {
+            "S": "minecraft:smooth_stone",
+            "F": "minecraft:furnace",
+            "B": "minecraft:stone"
+        }
+    )
+
+    event.shaped(
+        "minecraft:stonecutter",
+        [
+            " B ",
+            "LCL",
+            "SSS"
+        ],
+        {
+            "S": "minecraft:smooth_stone",
+            "L": "totemic:cedar_slabs",
+            "C": "thermal:copper_plate",
+            "B": "kubejs:bronze_blade"
+        }
+    )
+
+    event.shaped(
         "immersiveengineering:hammer",
         [
             " IS",

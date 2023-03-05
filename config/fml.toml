@@ -1,5 +1,4 @@
-
-Enable forge global version checking
+# Enable forge global version checking
 versionCheck = true
 # does the splashscreen run
 splashscreen = true
