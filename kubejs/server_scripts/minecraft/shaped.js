@@ -73,6 +73,19 @@ ServerEvents.recipes(event => {
     )
 
     event.shaped(
+        "8x kubejs:infused_bricks",
+        [
+            " B ",
+            "BAB",
+            " B " // something in the corners
+        ],
+        {
+            "B": "minecraft:brick",
+            "A": "totemic:baykok_bow"
+        }
+    )
+
+    event.shaped(
         "immersiveengineering:cokebrick",
         [
             "GBG",
@@ -95,8 +108,8 @@ ServerEvents.recipes(event => {
             "GRG"
         ],
         {
-            'G': "minecraft:iron_ingot", // probably grout once we have tinkers
-            "A": "totemic:baykok_bow",
+            'G': "minecraft:iron_ingot",
+            "A": "kubejs:infused_bricks",
             "B": "minecraft:bricks",
             "R": "minecraft:redstone"
         }
