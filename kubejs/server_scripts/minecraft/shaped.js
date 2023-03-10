@@ -2,14 +2,14 @@ ServerEvents.recipes(event => {
     event.shaped(
         "minecraft:campfire",
         [
-            " L ",
+            " C ",
             "SFS",
             "BBB"
         ],
         {
             "S": "minecraft:stick",
-            "L": "minecraft:leaves",
             "F": "minecraft:flint",
+            "C": "minecraft:coal",
             "B": "#minecraft:logs"
         }
     )
@@ -45,15 +45,14 @@ ServerEvents.recipes(event => {
     event.shaped(
         "minecraft:stonecutter",
         [
-            " B ",
+            " C ",
             "LCL",
             "SSS"
         ],
         {
             "S": "minecraft:smooth_stone",
-            "L": "totemic:cedar_slabs",
-            "C": "thermal:copper_plate",
-            "B": "kubejs:bronze_blade"
+            "L": "totemic:cedar_slab",
+            "C": "thermal:copper_plate"
         }
     )
 
@@ -73,7 +72,7 @@ ServerEvents.recipes(event => {
     )
 
     event.shaped(
-        "8x kubejs:infused_bricks",
+        "9x kubejs:infused_bricks",
         [
             " B ",
             "BAB",
@@ -86,7 +85,7 @@ ServerEvents.recipes(event => {
     )
 
     event.shaped(
-        "immersiveengineering:cokebrick",
+        "3x immersiveengineering:cokebrick",
         [
             "GBG",
             "BSB",
@@ -96,7 +95,7 @@ ServerEvents.recipes(event => {
             'G': "minecraft:gravel", // probably grout once we have tinkers
             "B": "minecraft:bricks",
             "C": "minecraft:clay",
-            "S": "minecraft:sandstone"
+            "S": "kubejs:infused_bricks"
         }
     )
 
@@ -116,16 +115,103 @@ ServerEvents.recipes(event => {
     )
 
     event.shaped(
-        "immersiveengineering:reinforced_blastbrick",
+        "immersiveengineering:blastbrick_reinforced",
         [
             " I ",
-            "GBG",
+            " B ",
             " I "
         ],
         {
-            'G': "thermal:gold_plate",
             'I': "thermal:invar_plate",
             "B": "immersiveengineering:blastbrick"
+        }
+    )
+
+    event.shaped(
+        "immersiveengineering:steel_scaffolding_standard",
+        [
+            "PIP",
+            "I I",
+            "PIP"
+        ],
+        {
+            'I': "immersiveengineering:plate_steel",
+            "P": "immersiveengineering:stick_steel"
+        }
+    )
+
+    event.shaped(
+        "immersiveengineering:alu_scaffolding_standard",
+        [
+            "PIP",
+            "G G",
+            "PIP"
+        ],
+        {
+            'I': "immersiveengineering:plate_aluminum",
+            "P": "immersiveengineering:stick_aluminum",
+            // apparently no gold stick... we will need one
+            //"G": "immersiveengineering:stick_gold",
+            "G": "minecraft:stick"
+        }
+    )
+
+    event.shaped(
+        "immersiveengineering:light_engineering",
+        [
+            "PCP",
+            "MSM",
+            "PCP"
+        ],
+        {
+            "S": "immersiveengineering:steel_scaffolding_standard",
+            "P": "immersiveengineering:plate_steel",
+            "M": "immersiveengineering:component_iron",
+            "C": "thermal:gear_nickel"
+        }
+    )
+
+    event.shaped(
+        "immersiveengineering:heavy_engineering",
+        [
+            "PCP",
+            "MSM",
+            "PCP"
+        ],
+        {
+            "S": "immersiveengineering:steel_scaffolding_standard",
+            "P": "immersiveengineering:plate_steel",
+            "M": "immersiveengineering:component_steel",
+            "C": "thermal:gear_invar"
+        }
+    )
+
+    event.shaped(
+        "immersiveengineering:redstone_engineering",
+        [
+            "PCP",
+            "MSM",
+            "PCP"
+        ],
+        {
+            "S": "immersiveengineering:steel_scaffolding_standard",
+            "P": "immersiveengineering:plate_steel",
+            "M": "immersiveengineering:coil_copper",
+            "C": "minecraft:redstone_block"
+        }
+    )
+
+    event.shaped(
+        "2x immersiveengineering:coil_lv",
+        [
+            " C ",
+            "RSR",
+            " C "
+        ],
+        {
+            "S": "immersiveengineering:stick_treated",
+            "C": "immersiveengineering:wire_copper",
+            "R": "minecraft:redstone"
         }
     )
 })
