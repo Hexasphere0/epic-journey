@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
         {
             "S": "immersiveengineering:steel_scaffolding_standard",
             "P": "immersiveengineering:plate_steel",
-            "M": "immersiveengineering:coil_copper",
+            "M": "immersiveengineering:coil_lv",
             "C": "minecraft:redstone_block"
         }
     )
