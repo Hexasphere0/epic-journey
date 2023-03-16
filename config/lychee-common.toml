@@ -1,4 +1,2 @@
-[debug]
-enable = false
-[fragment]
-enable = true
+debug = false
+

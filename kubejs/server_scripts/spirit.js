@@ -38,7 +38,7 @@ let t1soulforge = {
     }
 }
 
-ServerEvents.recipes(event => {
+onEvent("recipes", event => {
     event.custom({
         type: "spirit:soul_engulfing",
         input: {

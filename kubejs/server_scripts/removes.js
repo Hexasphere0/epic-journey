@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+onEvent("recipes", event => {
     let removes = [
         "immersiveengineering:hammer",
         "immersiveengineering:cokebrick",
@@ -6,8 +6,9 @@ ServerEvents.recipes(event => {
         "immersiveengineering:reinforced_blastbrick",
         "immersiveengineering:light_engineering",
         "immersiveengineering:heavy_engineering",
-        "immersiveengineering:redstone_engineering",
-        "immersiveengineering:coil_lv",
+        "immersiveengineering:rs_engineering",
+        "immersiveengineering:wirecoil_copper",
+        "immersiveengineering:treated_wood_planks",
         "spirit:soul_crystal_shard"
     ]
 
