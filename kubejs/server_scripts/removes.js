@@ -11,7 +11,17 @@ onEvent("recipes", event => {
         "immersiveengineering:treated_wood_planks",
         "minecraft:furnace",
         "minecraft:blast_furnace",
-        "minecraft:"
+        "minecraft:stonecutter",
+        "tconstruct:grout",
+        "tconstruct:seared_melter",
+        "tconstruct:seared_heater",
+        "tconstruct:seared_faucet",
+        "tconstruct:seared_channel",
+        "tconstruct:seared_basin",
+        "tconstruct:seared_basin",
+        "tconstruct:seared_table",
+        "tconstruct:crafting_station",
+        "tconstruct:pattern",
         "spirit:soul_crystal_shard"
     ]
 
@@ -24,9 +34,13 @@ onEvent("recipes", event => {
 
     let removeShapedOnly = [
         "minecraft:campfire",
+        "immersiveengineering:component_steel",
+        "immersiveengineering:component_iron"
     ]
 
     for (let i = 0; i < removeShapedOnly.length; i++){
         event.remove({output: removeShapedOnly[i], type: "minecraft:shaped"})
     }
+
+    event.remove({output: "tconstruct:seared_brick", type: "minecraft:smelting"})
 })

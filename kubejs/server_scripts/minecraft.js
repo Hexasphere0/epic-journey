@@ -41,22 +41,7 @@ onEvent('recipes', event => {
             "B": "minecraft:stone"
         }
     )
-
     
-    event.shaped(
-        "minecraft:stonecutter",
-        [
-            " C ",
-            "LCL",
-            "SSS"
-        ],
-        {
-            "S": "minecraft:smooth_stone",
-            "L": "#minecraft:wooden_slabs",
-            "C": "thermal:copper_plate"
-        }
-    )
-
     event.shaped(
         "minecraft:stonecutter",
         [
