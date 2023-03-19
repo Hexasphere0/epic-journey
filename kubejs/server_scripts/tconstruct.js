@@ -22,7 +22,7 @@ onEvent("recipes", event => {
         ],
         {
             "B": "tconstruct:seared_bricks",
-            "S": "minecraft:iron_ingot",
+            "S": "minecraft:copper_ingot",
             "F": "tconstruct:seared_ingot_gauge",
             "G": "minecraft:glass"
         }

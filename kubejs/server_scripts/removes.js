@@ -19,9 +19,14 @@ onEvent("recipes", event => {
         "tconstruct:seared_channel",
         "tconstruct:seared_basin",
         "tconstruct:seared_basin",
-        "tconstruct:seared_table",
+        "tconstruct:seared_table",        
+        "tconstruct:seared_drain",
+        "tconstruct:seared_chute",
+        "tconstruct:seared_duct",
+        "tconstruct:smeltery_controller",
         "tconstruct:crafting_station",
         "tconstruct:pattern",
+        "tconstruct:seared_controller",
         "spirit:soul_crystal_shard"
     ]
 
