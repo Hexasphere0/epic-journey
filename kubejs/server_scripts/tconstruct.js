@@ -1,4 +1,5 @@
 onEvent("recipes", event => {
+    // early game
     event.shaped(
         "4x tconstruct:grout",
         [
@@ -115,7 +116,33 @@ onEvent("recipes", event => {
         ],
         {
             "N": "thermal:copper_nugget",
-            "S": "minecraft:stick"
+            "S": "minecraft:paper"
         }
     )
+
+    // foundry+ (gated behind nether)
+    // come back to this later
+
+    event.blasting("minecraft:nether_brick", "tconstruct:nether_grout")
+    event.recipes.tconstruct.casting_table("tconstruct:seared_brick", "tconstruct:molten_constantan", 20).cast("minecraft:nether_brick").consumeCast()
+
+    event.shaped(
+        "2x tconstruct:scorched_glass",
+        [
+            " B ",
+            "BGB",
+            " B "
+        ],
+        {
+            "G": "ae2:quartz_glass",
+            "B": "tconstruct:sorched_brick"
+        }
+    )
+
+    // event.shaped(
+    //     "tconstruct:scorched_fuel_tank",
+    //     [
+    //         "B"
+    //     ]
+    // )
 })

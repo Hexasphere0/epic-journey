@@ -1,7 +1,5 @@
 onEvent("item.tooltip", tooltip => {
-    console.log("TOOLTIP!?!?")
-
-    // add tooltips to smeltery components because it is disabled
+    // remove tooltips from smeltery components because it is disabled
     let smelteryComponents = [
         "tconstruct:seared_stone",
         "tconstruct:seared_cobble",
@@ -20,5 +18,4 @@ onEvent("item.tooltip", tooltip => {
     ]
 
     tooltip.remove(smelteryComponents)
-    //tooltip.add(smelteryComponents, "Decorational, the smeltery is disabled in this modpack")
 })

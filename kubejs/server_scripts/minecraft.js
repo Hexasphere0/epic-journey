@@ -56,6 +56,8 @@ onEvent('recipes', event => {
         }
     )
 
+    event.shapeless("minecraft:paper", ["3x minecraft:sugarcane"])
+
 
     event.campfireCooking("minecraft:brick", "minecraft:clay_ball")
 })
