@@ -27,10 +27,14 @@ onEvent("recipes", event => {
         "tconstruct:seared_drain",
         "tconstruct:seared_chute",
         "tconstruct:seared_duct",
+        "tconstruct:molten_amethyst_bronze",
         "tconstruct:smeltery_controller",
         "tconstruct:crafting_station",
         "tconstruct:pattern",
         "tconstruct:seared_controller",
+        "extendedmushrooms:honey_fungus",
+        "extendedmushrooms:poisonous_mushroom",
+        "extendedmushrooms:slime_fungus",
         "spirit:soul_crystal_shard"
     ]
 
@@ -52,4 +56,5 @@ onEvent("recipes", event => {
     }
 
     event.remove({output: "tconstruct:seared_brick", type: "minecraft:smelting"})
+    event.remove({output: "minecraft:fermented_spider_eye", type: "extendedmushrooms:fairy_ring_recipe"})
 })

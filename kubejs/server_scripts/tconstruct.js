@@ -120,6 +120,25 @@ onEvent("recipes", event => {
         }
     )
 
+    event.custom({
+        type: "tconstruct:alloy",
+        inputs: [
+            {
+                name: "tconstruct:molten_bronze",
+                amount: 180
+            },
+            {
+                name: "tconstruct:molten_amethyst",
+                amount: 100
+            }
+        ],
+        result: {
+            fluid: "tconstruct:molten_amethyst_bronze",
+            amount: 180
+        },
+        temperature: 1000
+    })
+
     // foundry+ (gated behind nether)
     // come back to this later
 
@@ -135,7 +154,7 @@ onEvent("recipes", event => {
         ],
         {
             "G": "ae2:quartz_glass",
-            "B": "tconstruct:sorched_brick"
+            "B": "tconstruct:scorched_brick"
         }
     )
 

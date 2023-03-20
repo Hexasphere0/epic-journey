@@ -8,5 +8,5 @@ onEvent('item.registry', event => {
 
 onEvent('block.registry', event => {
 	// Register new blocks here
-	event.create("infused_bricks").displayName("Infused Bricks").hardness(2.0)
+	event.create("mycelial_bricks").displayName("Mycelial Bricks").hardness(2.0)
 })

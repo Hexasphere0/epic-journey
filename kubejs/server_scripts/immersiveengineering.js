@@ -14,19 +14,19 @@ onEvent("recipes", event => {
         }
     )
 
-    event.shaped(
-        "9x kubejs:infused_bricks",
-        [
-            "CBC",
-            "BAB",
-            "CBC"
-        ],
-        {
-            "C": "tconstruct:blood_slime_ball",
-            "B": "minecraft:brick",
-            "A": "minecraft:dirt" //tbd
-        }
-    )
+    // event.shaped(
+    //     "9x kubejs:infused_bricks",
+    //     [
+    //         "CBC",
+    //         "BAB",
+    //         "CBC"
+    //     ],
+    //     {
+    //         "C": "tconstruct:blood_slime_ball",
+    //         "B": "minecraft:brick",
+    //         "A": "minecraft:dirt" //tbd
+    //     }
+    // )
 
     event.shaped(
         "3x immersiveengineering:cokebrick",
@@ -39,7 +39,7 @@ onEvent("recipes", event => {
             'G': "minecraft:gravel", // probably grout once we have tinkers
             "B": "minecraft:bricks",
             "C": "minecraft:clay",
-            "S": "kubejs:infused_bricks"
+            "S": "kubejs:mycelial_bricks"
         }
     )
 
@@ -52,7 +52,7 @@ onEvent("recipes", event => {
         ],
         {
             'G': "minecraft:iron_ingot",
-            "A": "kubejs:infused_bricks",
+            "A": "kubejs:mycelial_bricks",
             "B": "minecraft:bricks",
             "R": "minecraft:redstone"
         }
@@ -159,16 +159,16 @@ onEvent("recipes", event => {
         }
     )
 
-    event.shaped(
-        "2x immersiveengineering:treated_wood_horizontal",
-        [
-            "NNN",
-            "NCN",
-            "NNN"
-        ],
-        {
-            "N": "tconstruct:nahuatl",
-            "C": "thermal:creosote",
-        }
-    )
+    // event.shaped(
+    //     "2x immersiveengineering:treated_wood_horizontal",
+    //     [
+    //         "NNN",
+    //         "NCN",
+    //         "NNN"
+    //     ],
+    //     {
+    //         "N": "tconstruct:nahuatl",
+    //         "C": "thermal:creosote",
+    //     }
+    // )
 })
