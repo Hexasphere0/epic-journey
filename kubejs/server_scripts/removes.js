@@ -23,7 +23,7 @@ onEvent("recipes", event => {
         "tconstruct:seared_channel",
         "tconstruct:seared_basin",
         "tconstruct:seared_basin",
-        "tconstruct:seared_table",        
+        "tconstruct:seared_table",
         "tconstruct:seared_drain",
         "tconstruct:seared_chute",
         "tconstruct:seared_duct",

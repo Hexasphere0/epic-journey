@@ -164,4 +164,82 @@ onEvent("recipes", event => {
     //         "B"
     //     ]
     // )
+
+    // end+
+    event.custom({
+        type: "tconstruct:alloy",
+        inputs: [
+            {
+                name: "tconstruct:molten_steel",
+                amount: 90
+            },
+            {
+                name: "tconstruct:molten_cobalt",
+                amount: 90
+            },
+            {
+                name: "tconstruct:molten_slime",
+                amount: 10
+            },
+            {
+                name: "tconstruct:molten_skyslime",
+                amount: 10
+            },
+            {
+                name: "tconstruct:molten_enderslime",
+                amount: 10
+            },
+        ],
+        result: {
+            fluid: "tconstruct:molten_slimesteel",
+            amount: 180
+        },
+        temperature: 1000
+    })
+
+    event.custom({
+        type: "tconstruct:alloy",
+        inputs: [
+            {
+                name: "tconstruct:molten_cobalt",
+                amount: 90
+            },
+            {
+                name: "tconstruct:molten_certus_quartz",
+                amount: 45
+            },
+            {
+                name: "tconstruct:molten_copper",
+                amount: 45
+            }
+        ],
+        result: {
+            fluid: "tconstruct:molten_hepatizon",
+            amount: 180
+        },
+        temperature: 1500
+    })
+
+    event.custom({
+        type: "tconstruct:alloy",
+        inputs: [
+            {
+                name: "tconstruct:molten_netherite",
+                amount: 180
+            },
+            {
+                name: "tconstruct:molten_electrum",
+                amount: 90
+            },
+            {
+                name: "tconstruct:molten_magma",
+                amount: 90
+            }
+        ],
+        result: {
+            fluid: "tconstruct:molten_queen_slime",
+            amount: 180
+        },
+        temperature: 1500
+    })
 })
