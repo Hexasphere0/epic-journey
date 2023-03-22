@@ -174,20 +174,16 @@ onEvent("recipes", event => {
                 amount: 90
             },
             {
-                name: "tconstruct:molten_cobalt",
-                amount: 90
-            },
-            {
                 name: "tconstruct:molten_slime",
-                amount: 10
+                amount: 100
             },
             {
                 name: "tconstruct:molten_skyslime",
-                amount: 10
+                amount: 100
             },
             {
                 name: "tconstruct:molten_enderslime",
-                amount: 10
+                amount: 100
             },
         ],
         result: {
@@ -206,7 +202,7 @@ onEvent("recipes", event => {
             },
             {
                 name: "tconstruct:molten_certus_quartz",
-                amount: 45
+                amount: 50
             },
             {
                 name: "tconstruct:molten_copper",
@@ -233,7 +229,7 @@ onEvent("recipes", event => {
             },
             {
                 name: "tconstruct:molten_magma",
-                amount: 90
+                amount: 100
             }
         ],
         result: {
@@ -241,5 +237,15 @@ onEvent("recipes", event => {
             amount: 180
         },
         temperature: 1500
+    })
+
+    // fuels
+    event.custom({
+        type: "tconstruct:melting_fuel",
+        item: {
+            name: "kubejs:mycelial_compound",
+        },
+        "duration": 100,
+        "temperature": 1000
     })
 })

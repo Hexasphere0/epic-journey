@@ -1,31 +1,4 @@
 onEvent("recipes", event => {
-    // final chapter 1 item
-
-    event.custom({
-        type: "extendedmushrooms:fairy_ring_recipe",
-        ingredients: [
-            {
-                item: "tconstruct:amethyst_bronze_ingot"
-            },
-            {
-                item: "extendedmushrooms:honey_fungus"
-            },
-            {
-                item: "minecraft:bricks"
-            },
-            {
-                item: "extendedmushrooms:slime_fungus"
-            },
-            {
-                item: "extendedmushrooms:poisonous_mushroom"
-            }
-        ],
-        result: {
-            item: "kubejs:mycelial_bricks",
-        },
-        recipeTime: 60
-    })
-
     event.custom({
         type: "extendedmushrooms:fairy_ring_recipe",
         ingredients: [

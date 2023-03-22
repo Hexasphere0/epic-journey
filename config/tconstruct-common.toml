@@ -2,7 +2,7 @@
 #Everything to do with gameplay
 [gameplay]
 	#Set this to false to disable new players spawning with the Tinkers' Book.
-	shouldSpawnWithTinkersBook = true
+	shouldSpawnWithTinkersBook = false
 	#If non-empty, only this material will be shown on tools in creative and JEI (or the first valid material if this is invalid for the tool).
 	#If empty, all materials will show
 	showOnlyToolMaterial = ""
@@ -10,9 +10,9 @@
 	#If empty, all materials will show
 	showOnlyPartMaterial = ""
 	#If true, tables such as the part builder and tinker station will show all variants. If false shows only a variant with a default texture.
-	showAllTableVariants = true
+	showAllTableVariants = false
 	#If true, anvils will show all metal variants. If false, shows only a variant with the default texture
-	showAllAnvilVariants = true
+	showAllAnvilVariants = false
 	#If true, smeltery and foundry controllers, drains, ducts, and chutes will show all variants
 	showAllSmelteryVariants = true
 
@@ -69,10 +69,10 @@
 		[recipes.ore_rates.foundry]
 			#Number of nuggets produced per metal ore unit melted. 9 nuggets would give 1 ingot
 			#Range: 1 ~ 45
-			nuggetsPerMetal = 9
+			nuggetsPerMetal = 18
 			#Number of gem shards produced per gem ore unit melted. 4 gem shards would give 1 gem
 			#Range: 1 ~ 20
-			shardsPerGem = 4
+			shardsPerGem = 8
 
 		#Byprouct rates when melting in the foundry
 		[recipes.ore_rates.foundry_byproduct]
@@ -81,7 +81,7 @@
 			nuggetsPerMetal = 3
 			#Number of gem shards produced per gem ore unit melted. 4 gem shards would give 1 gem
 			#Range: 1 ~ 20
-			shardsPerGem = 4
+			shardsPerGem = 2
 
 	#Entity head drops when killed by a charged creeper
 	[recipes.heads]

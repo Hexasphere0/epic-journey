@@ -4,6 +4,7 @@ console.info('Hello, World! (You will only see this line once in console, during
 
 onEvent('item.registry', event => {
 	event.create("rainbow_petal").displayName("Rainbow Petal");
+	event.create("mycelial_compound").displayName("Mycelial Compound").burnTime(200)
 })
 
 onEvent('block.registry', event => {
